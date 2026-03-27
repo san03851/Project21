@@ -52,7 +52,7 @@ void UWorld::Load(std::string MapName)
 				SpawnActor<AWall>()->SetActorLocation(X, Y);
 				std::cout << Line[X];
 				ECounter = ECounter +1;
-				if (ECounter == Line.length() - 1)
+				if (ECounter == Line.length())
 				{
 					std::cout << std::endl;
 					ECounter = 0;
@@ -63,7 +63,7 @@ void UWorld::Load(std::string MapName)
 				SpawnActor<AFloor>()->SetActorLocation(X, Y);
 				std::cout << Line[X];
 				ECounter = ECounter + 1;
-				if (ECounter == Line.length() - 1)
+				if (ECounter == Line.length())
 				{
 					std::cout << std::endl;
 					ECounter = 0;
@@ -74,7 +74,7 @@ void UWorld::Load(std::string MapName)
 				SpawnActor<APlayer>()->SetActorLocation(X, Y);
 				std::cout << Line[X];
 				ECounter = ECounter + 1;
-				if (ECounter == Line.length() - 1)
+				if (ECounter == Line.length())
 				{
 					std::cout << std::endl;
 					ECounter = 0;
@@ -85,7 +85,7 @@ void UWorld::Load(std::string MapName)
 				SpawnActor<AMonster>()->SetActorLocation(X, Y);
 				std::cout << Line[X];
 				ECounter = ECounter + 1;
-				if (ECounter == Line.length() - 1)
+				if (ECounter == Line.length())
 				{
 					std::cout << std::endl;
 					ECounter = 0;
@@ -96,7 +96,7 @@ void UWorld::Load(std::string MapName)
 				SpawnActor<AGoal>()->SetActorLocation(X, Y);
 				std::cout << Line[X];
 				ECounter = ECounter + 1;
-				if (ECounter == Line.length() - 1)
+				if (ECounter == Line.length())
 				{
 					std::cout << std::endl;
 					ECounter = 0;
